@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+     <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+     <style>
+       section{
+         height:35rem;
+         background-image:url("img/photo-1.jpg");
+         background-repeat: no-repeat;
+         background-position: center bottom;
+         background-attachment: fixed;
+         background-size: cover;
+        
+       }
+       #weather-update{
+          height: 50%;
+          width: 30%;
+          background-color:#000000ca;
+          border-radius: 10px;
+    
+       }
+       .input-group{
+         width: 30%;
+       }
+     </style>
+</head>
+<body>
+   <section class="">
+    <h1 class="text-center text-danger">Check Weather</h1>
+    <!-- search-result -->
+    <div class="input-group mb-3 mx-auto">
+        <input id="weather-search-areya" type="text" class="form-control" placeholder="search by country name" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="loadWeatherToday()" class="btn btn-outline-secondary bg-info" type="button" id="button-addon2">Button</button>
+      </div>
+      <!-- error msg -->
+      <h5 class="text-danger" id="error-msg">❌Your name is Incorrect...</h5>
+      <!-- show result -->
+      <div id="weather-update" class=" mx-auto text-center text-white"></div>
+    <script src="js/weather.js"></script>
+   </section>
+</body>
+</html>

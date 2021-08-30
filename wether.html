@@ -27,6 +27,7 @@
        .input-group{
          width: 30%;
        }
+     
      </style>
 </head>
 <body>
@@ -38,9 +39,10 @@
         <button onclick="loadWeatherToday()" class="btn btn-outline-secondary bg-info" type="button" id="button-addon2">Button</button>
       </div>
       <!-- error msg -->
-      <h5 class="text-danger" id="error-msg">❌Your name is Incorrect...</h5>
+      <h5 class="text-danger text-center d-none" id="error-msg">❌Your name is Incorrect...</h5>
       <!-- show result -->
       <div id="weather-update" class=" mx-auto text-center text-white"></div>
+      
     <script src="js/weather.js"></script>
    </section>
 </body>
